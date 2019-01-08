@@ -36,7 +36,7 @@ rm -rf ~/.fonts/.git
 echo Configuring GNOME...
 gsettings set org.gnome.desktop.wm.preferences button-layout "close,minimize,maximize:"
 gsettings set org.gnome.desktop.interface gtk-theme "Mojave-dark-solid"
-gsettings set org.gnome.desktop.interface icon-theme "MacOS"
+gsettings set org.gnome.desktop.interface icon-theme "macOS"
 
 gsettings set org.gnome.desktop.interface document-font-name "San Francisco Text 11"
 gsettings set org.gnome.desktop.interface font-name "San Francisco Text 11"
