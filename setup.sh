@@ -51,5 +51,8 @@ sudo snap install code-insiders --classic
 sudo snap install discord
 sudo snap install slack --classic
 
+echo Misc Setup...
+echo set completion-ignore-case on | sudo tee -a /etc/inputrc
+
 echo Done!
 sudo reboot
