@@ -48,6 +48,8 @@ gsettings set org.gnome.shell.extensions.dash-to-dock transparency-mode FIXED
 
 echo Installing software...
 sudo snap install code-insiders --classic
+sudo snap install discord
+sudo snap install slack --classic
 
 echo Done!
 sudo reboot
