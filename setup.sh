@@ -11,6 +11,7 @@ sudo apt upgrade -y
 sudo apt full-upgrade -y
 
 echo Installing tools...
+sudo apt remove yarn
 sudo apt install -y git docker build-essential clang yarn wget gnome-tweak-tool
 
 echo Installing C++ libraries...
@@ -44,6 +45,9 @@ gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true
 gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
 gsettings set org.gnome.shell.extensions.dash-to-dock transparency-mode FIXED
+
+echo Installing software...
+sudo snap install code-insiders --classic
 
 echo Done!
 sudo reboot
