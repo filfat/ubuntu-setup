@@ -11,7 +11,7 @@ sudo apt upgrade -y
 sudo apt full-upgrade -y
 
 echo Installing tools...
-sudo apt remove yarn
+sudo apt remove yarn -y
 sudo apt install -y git docker build-essential clang yarn wget gnome-tweak-tool
 
 echo Installing C++ libraries...
@@ -22,6 +22,7 @@ mkdir ~/.icons
 mkdir ~/.themes
 mkdir ~/.fonts
 
+# TODO: find permanent links
 wget https://dl.opendesktop.org/api/files/download/id/1546860792/s/e9b3577dc997e00561725bb5f3d7d7ad0a17fd6c54ffefa8744ad2fb70af8b0f38c5398d339a6dca631a7a32a0fb18f048b752d49a8302d523bcbe5c58f65ce4/t/1546911671/u//Mojave-dark-solid.tar.xz
 sudo tar -xf Mojave-dark-solid.tar.xz -C ~/.themes
 rm -rf Mojave-dark-solid.tar.xz
